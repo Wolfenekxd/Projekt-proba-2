@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<br>
+</head>
+<body>
+
+<div class="container h-250 mb-4">
+	<div class="d-flex justify-content-center h-200">
+		<div class="user_card">
+			<div class="d-flex justify-content-center">
+				<h3 id="form-title">Welcome to Poll App</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="normal_text">Sign in or Log in to create and vote in various polls!</div>
+            </div>
+			<div class="d-flex justify-content-center form_container">
+                <div class="card-body mb-7">
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                    <a class="btn login_btn" a href ="/accounts/signup">
+                        Sign up
+                    </a>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                    <a class="btn login_btn" a href ="accounts/login">
+                        Log in
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<br>
+</body>
+</html>
+{% endblock %}
