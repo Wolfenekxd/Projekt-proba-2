@@ -50,7 +50,6 @@ def CreatePoll(request):
     form = createPoll(request.POST)
     if form.is_valid():
       obj = polls()
-      obj.id = last_id(polls) + 1
       obj.Poll_question = form.cleaned_data['Poll_question']
       obj.Date_of_poll = form.cleaned_data['Date_of_poll']
       obj.End_of_poll = form.cleaned_data['End_of_poll']
